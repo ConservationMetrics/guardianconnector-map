@@ -20,17 +20,17 @@ To get started, copy `.env.example` to `.env` and add your database and table in
 
 ```bash
 # install dependencies
-$ npm install
+$ pnpm install
 
 # serve with hot reload at localhost:8080
-$ npm dev
+$ pnpm dev
 
 # build for production and launch server
-$ npm build
-$ npm start
+$ pnpm build
+$ pnpm start
 
 # generate static project
-$ npm generate
+$ pnpm generate
 ```
 
 Add `--hostname 0.0.0.0` if you want the app to be accessible across your local network.

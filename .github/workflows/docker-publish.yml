@@ -31,7 +31,10 @@ jobs:
         with:
           images: communityfirst/guardianconnector-explorer
       - name: Run tests
-        run: npm install && npm run test
+        run: |
+          npm install -g pnpm
+          pnpm install
+          pnpm run test
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
