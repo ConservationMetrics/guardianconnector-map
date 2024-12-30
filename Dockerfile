@@ -1,5 +1,5 @@
 # Use the official Node.js image from DockerHub
-FROM node:18.0.0
+FROM node:20.15.0-slim
 
 # Set the working directory
 RUN mkdir -p /app
