@@ -199,7 +199,7 @@ const prepareAlertData = (
     transformedItem["territory"] = capitalizeFirstLetter(
       item.territory_name ?? "",
     );
-    transformedItem["alertID"] = item._id;
+    transformedItem["alertID"] = item.alert_id;
     transformedItem["alertDetectionRange"] =
       `${item.date_start_t1} to ${item.date_end_t1}`;
     transformedItem["monthDetected"] = `${formattedMonth}-${item.year_detec}`;
@@ -220,9 +220,9 @@ const prepareAlertData = (
       satelliteLookup[item.sat_detect_prefix] || item.sat_detect_prefix;
 
     transformedItem["t0_url"] =
-      `alerts/${item.territory_id}/${item.year_detec}/${formattedMonth}/${item._id}/images/${item.sat_viz_prefix}_T0_${item._id}.jpg`;
+      `alerts/${item.territory_id}/${item.year_detec}/${formattedMonth}/${item.alert_id}/images/${item.sat_viz_prefix}_T0_${item.alert_id}.jpg`;
     transformedItem["t1_url"] =
-      `alerts/${item.territory_id}/${item.year_detec}/${formattedMonth}/${item._id}/images/${item.sat_viz_prefix}_T1_${item._id}.jpg`;
+      `alerts/${item.territory_id}/${item.year_detec}/${formattedMonth}/${item.alert_id}/images/${item.sat_viz_prefix}_T1_${item.alert_id}.jpg`;
     transformedItem["previewImagerySource"] =
       satelliteLookup[item.sat_viz_prefix] || item.sat_viz_prefix;
 
