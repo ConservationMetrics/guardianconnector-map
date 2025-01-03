@@ -2,3 +2,4 @@ node_modules
 .github
 *.md
 pnpm-lock.yaml
+.nuxt
