@@ -60,7 +60,7 @@ export type GeoJSON = {
 };
 
 export type AlertsMetadata = {
-  alert_source: string;
+  data_source: string;
   type_alert: string;
   month: number;
   year: number;

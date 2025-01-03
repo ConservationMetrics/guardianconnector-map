@@ -205,7 +205,7 @@ const prepareAlertData = (
     transformedItem["monthDetected"] = `${formattedMonth}-${item.year_detec}`;
     transformedItem["YYYYMM"] = `${item.year_detec}${formattedMonth}`;
     transformedItem["dataProvider"] = capitalizeFirstLetter(
-      `${item.alert_source}`,
+      `${item.data_source}`,
     );
     transformedItem["confidenceLevel"] = item.confidence;
     transformedItem["alertType"] = item.alert_type?.replace(/_/g, " ") ?? "";
@@ -326,7 +326,7 @@ const prepareAlertsStatistics = (
 
     // Set alert_source
     dataProviders = Array.from(
-      new Set(metadata.map((item) => item.alert_source)),
+      new Set(metadata.map((item) => item.data_source)),
     );
   } else {
     // If metadata is null, calculate earliest and latest dates from data
