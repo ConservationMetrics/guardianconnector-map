@@ -58,7 +58,7 @@
     "husky": "^9.1.7",
     "jsdom": "^26.0.0",
     "lint-staged": "^15.4.3",
-    "nuxt-windicss": "^2.6.1",
+    "nuxt-windicss": "^3.0.1",
     "prettier": "^3.4.2",
     "typescript-eslint": "^8.23.0",
     "vitest": "^3.0.5"
