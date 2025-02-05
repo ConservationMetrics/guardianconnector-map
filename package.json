@@ -45,7 +45,7 @@
   "devDependencies": {
     "@eslint/js": "^9.19.0",
     "@nuxt/test-utils": "^3.15.4",
-    "@nuxtjs/i18n": "^8.5.5",
+    "@nuxtjs/i18n": "^9.1.5",
     "@types/mapbox-gl": "^3.4.1",
     "@types/node": "^22.13.1",
     "@types/pg": "^8.11.11",
